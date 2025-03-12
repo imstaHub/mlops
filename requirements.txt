@@ -1,0 +1,12 @@
+#!python3.11 - mac os
+python-dotenv
+
+scikit-learn==1.6.0
+imbalanced-learn
+
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+pyarrow

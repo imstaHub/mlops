@@ -3,6 +3,7 @@ python-dotenv
 
 scikit-learn==1.6.0
 imbalanced-learn
+graphviz
 
 numpy
 pandas

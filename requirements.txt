@@ -3,6 +3,7 @@ python-dotenv
 
 scikit-learn==1.6.0
 imbalanced-learn
+statsmodels
 graphviz
 
 numpy
@@ -11,3 +12,5 @@ scipy
 matplotlib
 seaborn
 pyarrow
+
+xgboost

@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend/app:/app
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  jenkins:
+    build: ./jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock  # host docker 제어
+    restart: unless-stopped
+    user: root  # Docker CLI 쓸 권한
+
+volumes:
+  jenkins_home:
+

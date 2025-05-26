@@ -1,3 +1,5 @@
+## Directory 구조
+
 ```
 auto_backend/
 │
@@ -12,4 +14,3 @@ auto_backend/
 │
 └── docker-compose.yml
 ```
-
